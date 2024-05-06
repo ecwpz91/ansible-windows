@@ -1,0 +1,5 @@
+---
+
+- name: Show the uptime of the server
+  win_command: net statistics workstation
+  register: uptime

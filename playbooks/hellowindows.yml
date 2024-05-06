@@ -1,0 +1,6 @@
+- name: Hello Windows
+  hosts: all
+  tasks:
+    - name: Run Windows Specific Commands
+      ansible.builtin.include_role:
+        name: ../roles/windows_tasks
